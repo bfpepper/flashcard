@@ -13,10 +13,14 @@ class Guess
   end
 
   def correct?
-    if @guess == card.answer
+    @guess == card.answer
+  end
+
+  def feedback
+    if correct?
       "Correct!"
     else
-      "I'm sorry. Please try again."
+      "Incorrect."
     end
   end
 
