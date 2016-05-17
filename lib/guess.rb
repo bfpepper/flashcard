@@ -1,14 +1,11 @@
 require './lib/flashcard'
 
 class Guess
+  attr_reader :card
 
   def initialize(guess, card)
     @guess = guess
     @card = card
-  end
-
-  def card
-    @card
   end
 
   def response

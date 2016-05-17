@@ -40,4 +40,12 @@ class RoundTest < Minitest::Test
     round = Round.new(deck)
     assert_equal card_1 ,round.current_card
   end
+
+  def test_recording_user_guess
+    card_1 = Card.new("When did Lamborghini become a business?", "May, 1963")
+    card_2 = Card.new("Who discovered blood types?", "Karl Landsteiner")
+    deck = Deck.new([card_1, card_2])
+    round = Round.new(deck)
+    assert_instance_of Guess, round.record_guess("May, 1963")
+  end
 end
