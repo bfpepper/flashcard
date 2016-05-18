@@ -1,9 +1,16 @@
+class CardGenerator
+  attr_reader :filename, :cards
 
-
-
-
-
-File.readlines('card.txt').map do |line|
-  question, answer =  line.split(", ")
-  card = Card.new(question, answer)
+  def initialize(filename)
+    @filename = filename
+    @cards = []
+    create_cards(filename)
   end
+
+  def create_cards(filename)
+    @cards = File.readlines(filename).map do |line|
+      question, answer =  line.split(", ")
+      Card.new(question, answer)
+    end
+  end
+end
