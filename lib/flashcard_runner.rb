@@ -26,4 +26,6 @@ round.deck.cards.each_with_index do |card, index|
 end
 
 puts "********************** Game over! **********************"
+puts "Calculating your score."
+sleep(2)
 puts "You had #{round.number_correct} correct guesses out of #{deck.count} for a score of #{round.percent_correct}%."

@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/guess'
 require './lib/flashcard'
-require './lib/sorting_cards'
+require './lib/deck'
 require './lib/round'
 require 'pry'
 
@@ -74,7 +74,7 @@ class RoundTest < Minitest::Test
     deck = Deck.new([card_1, card_2])
     round = Round.new(deck)
     round.record_guess("May, 1963")
-    assert_equal "Correct!", round.guesses.first.feedback
+    assert_equal "Correct! You're so smart.", round.guesses.first.feedback
   end
 
   def test_number_correct_working

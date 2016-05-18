@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/guess'
 require './lib/flashcard'
-require './lib/sorting_cards'
+require './lib/deck'
 
 
 class SortingTest < Minitest::Test

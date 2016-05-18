@@ -1,4 +1,4 @@
-require './lib/sorting_cards'
+require './lib/deck'
 
 class Round
   attr_reader :deck,
@@ -20,12 +20,6 @@ class Round
       @number_correct += 1 if guesses.last.correct?
     @guesses.last
   end
-
-  # def number_correct
-  #   if guesses.last.correct?
-  #     @total_correct += 1
-  #   end
-  # end
 
   def percent_correct
     ((number_correct / @guesses.count.to_f) * 100).to_i
