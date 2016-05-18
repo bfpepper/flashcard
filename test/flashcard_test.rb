@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/flashcard'
+require './lib/flashcard'
 
 class FlashcardTest < Minitest::Test
   def test_can_card_ask_questions

@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/guess'
-require_relative '../lib/flashcard'
+require './lib/guess'
+require './lib/flashcard'
 
 class GuessTest < Minitest::Test
   attr_reader :card,

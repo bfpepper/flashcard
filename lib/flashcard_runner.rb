@@ -5,7 +5,7 @@ require "./lib/round"
 
 card_1 = Card.new("When did Lamborghini become a business?", "May, 1963")
 card_2 = Card.new("Who discovered blood types?", "Karl Landsteiner")
-card_3 = Card.new("What is the address of Turing?","1510 Black Street")
+card_3 = Card.new("What is the address of Turing?","1510 Blake Street")
 card_4 = Card.new("When was Fat Boy dropped?", "August 6th, 1945")
 card_5 = Card.new("Where is the Nurburgring?", "Nurburg, Germany")
 card_6 = Card.new("Where was Alan Turing working during World War Two?", "Bletchy Park, England")
@@ -15,15 +15,15 @@ round = Round.new(deck)
 puts "Welcome! You are playing with #{deck.count} cards.
 _________________________________________________________"
 sleep(2)
-puts "This is card (NEED HELP HERE)out of #{deck.count}."
-puts card_1.question
-user_guess = gets.chomp
-#need to compare user_guess with correct answer
-#display next card
-puts card_2.question
-user_guess = gets.chomp
-#iterate over the last 4 cards
+round.deck.cards.each_with_index do |card, index|
+  puts "This is card #{index + 1} out of #{deck.count}."
+  puts card.question
+  user_guess = gets.chomp
+  # guess = Guess.new(user_guess, card)
+  guess = round.record_guess(user_guess, card)
+  # round.guesses << guess
+  puts guess.feedback
+end
 
 puts "********************** Game over! **********************"
-sleep(2)
-puts "you had #{guesses} correct guess out of #{deck.count} for a score of #{percent_correct}"
+puts "You had #{round.number_correct} correct guesses out of #{deck.count} for a score of #{round.percent_correct}%."

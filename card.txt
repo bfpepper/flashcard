@@ -1,0 +1,6 @@
+"When did Lamborghini become a business?", "May, 1963"
+"Who discovered blood types?", "Karl Landsteiner"
+"What is the address of Turing?","1510 Blake Street"
+"When was Fat Boy dropped?", "August 6th, 1945"
+"Where is the Nurburgring?", "Nurburg, Germany"
+"Where was Alan Turing working during World War Two?", "Bletchy Park, England"

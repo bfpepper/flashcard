@@ -1,8 +1,8 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/guess'
-require_relative '../lib/flashcard'
-require_relative '../lib/sorting_cards'
+require './lib/guess'
+require './lib/flashcard'
+require './lib/sorting_cards'
 
 
 class SortingTest < Minitest::Test
