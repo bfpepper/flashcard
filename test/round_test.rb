@@ -1,9 +1,10 @@
 require 'minitest/autorun'
-require 'minitest/pride'
+require 'minitest/nyan_cat'
 require './lib/guess'
 require './lib/flashcard'
 require './lib/deck'
 require './lib/round'
+require './lib/card_generator'
 require 'pry'
 
 
