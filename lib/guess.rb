@@ -18,9 +18,9 @@ class Guess
 
   def feedback
     if correct?
-      "Correct!"
+      "Correct! You're so smart."
     else
-      "Incorrect."
+      "That is not correct."
     end
   end
 
