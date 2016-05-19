@@ -10,7 +10,7 @@ round = Round.new(deck)
 
 puts "Welcome! You are playing with #{deck.count} cards.
 _________________________________________________________"
-sleep(2)
+sleep(1)
 round.deck.cards.each_with_index do |card, index|
   puts "This is card #{index + 1} out of #{deck.count}."
   puts card.question
@@ -21,5 +21,5 @@ end
 
 puts "********************** Game over! **********************"
 puts "Calculating your score."
-sleep(2)
+sleep(1)
 puts "You had #{round.number_correct} correct guesses out of #{deck.count} for a score of #{round.percent_correct}%."
