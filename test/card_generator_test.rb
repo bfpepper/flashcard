@@ -5,14 +5,6 @@ require './lib/flashcard'
 require './lib/deck'
 require './lib/round'
 require './lib/card_generator'
-require 'pry'
-
-
-# Test 1: when cg is created it is assocciated with a file
-# Test 3: verify that the cards are stored in an array
-# Test 2: verify that the cards in the arry are tied to a class
-# Test 4: a method called cards is available that will return the array of cards
-
 
 class CardGeneratorTest < Minitest::Test
   attr_reader :filename, :card_generator

@@ -5,7 +5,6 @@ require './lib/flashcard'
 require './lib/deck'
 require './lib/round'
 require './lib/card_generator'
-require 'pry'
 
 
 class RoundTest < Minitest::Test
