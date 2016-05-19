@@ -1,11 +1,7 @@
-require 'minitest/autorun'
-require 'minitest/nyan_cat'
 require './lib/guess'
 require './lib/flashcard'
 require './lib/deck'
 require './lib/round'
-require './lib/card_generator'
-require 'pry'
 
 # card_1 = Card.new("When did Lamborghini become a business?", "May, 1963")
 # card_2 = Card.new("Who discovered blood types?", "Karl Landsteiner")
@@ -14,7 +10,7 @@ require 'pry'
 # card_5 = Card.new("Where is the Nurburgring?", "Nurburg, Germany")
 # card_6 = Card.new("Where was Alan Turing working during World War Two?", "Bletchy Park, England")
 cards = CardGenerator.new("card.text").cards
-deck = Deck.new([card_1, card_2, card_3, card_4, card_5, card_6])
+deck = Deck.new(cards)
 round = Round.new(deck)
 
 puts "Welcome! You are playing with #{deck.count} cards.

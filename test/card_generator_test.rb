@@ -42,7 +42,7 @@ class CardGeneratorTest < Minitest::Test
     assert_equal "When did Lamborghini become a business?", card_generator.cards[0].question
   end
 
-  def this_is_the_answer_i_expect
+  def test_this_is_the_answer_i_expect
     assert_equal "May 1963", card_generator.cards[0].answer
   end
 end
