@@ -1,3 +1,3 @@
 class Runner
-  
+
 end

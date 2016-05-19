@@ -1,16 +1,11 @@
 require 'minitest/autorun'
 require 'minitest/nyan_cat'
 require './lib/guess'
-require './lib/flashcard'
-require './lib/deck'
-require './lib/round'
-require './lib/card_generator'
-require 'pry'
+
 
 class GuessTest < Minitest::Test
-  attr_reader :card,
-              :guess,
-              :incorrect_guess
+  attr_reader :card, :guess, :incorrect_guess
+  
   def setup
     @card = Card.new("What is the address of Turing?","1510 Blake Street")
     @guess = Guess.new("1510 Blake Street", card)

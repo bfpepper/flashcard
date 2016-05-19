@@ -4,12 +4,6 @@ require './lib/deck'
 require './lib/round'
 require './lib/card_generator'
 
-# card_1 = Card.new("When did Lamborghini become a business?", "May, 1963")
-# card_2 = Card.new("Who discovered blood types?", "Karl Landsteiner")
-# card_3 = Card.new("What is the address of Turing?","1510 Blake Street")
-# card_4 = Card.new("When was Fat Boy dropped?", "August 6th, 1945")
-# card_5 = Card.new("Where is the Nurburgring?", "Nurburg, Germany")
-# card_6 = Card.new("Where was Alan Turing working during World War Two?", "Bletchy Park, England")
 cards = CardGenerator.new("card.text").cards
 deck = Deck.new(cards)
 round = Round.new(deck)
