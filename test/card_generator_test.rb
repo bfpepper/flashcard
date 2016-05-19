@@ -4,7 +4,7 @@ require './lib/guess'
 require './lib/flashcard'
 require './lib/deck'
 require './lib/round'
-require './lib/card_generator'
+ require './lib/card_generator'
 
 class CardGeneratorTest < Minitest::Test
   attr_reader :filename, :card_generator

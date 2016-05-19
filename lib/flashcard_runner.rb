@@ -2,6 +2,7 @@ require './lib/guess'
 require './lib/flashcard'
 require './lib/deck'
 require './lib/round'
+require './lib/card_generator'
 
 # card_1 = Card.new("When did Lamborghini become a business?", "May, 1963")
 # card_2 = Card.new("Who discovered blood types?", "Karl Landsteiner")
